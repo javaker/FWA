@@ -37,10 +37,10 @@ public class User {
 
 
 
-    public void selectUser() {
+    public void selectUser(String name, String secondName) {
         SQLConnect sqlConnect = new SQLConnect();
         try {
-
+            Connection conn = sqlConnect.getConnection();
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT id, name, secondName FROM tmp");
         } catch (Exception e) {

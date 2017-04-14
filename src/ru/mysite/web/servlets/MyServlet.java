@@ -38,8 +38,8 @@ public class MyServlet extends HttpServlet {
         System.out.println(name + " " + secondName);
 
         User user = new User();
-        if (buttom.equals("Создать")) user.addUser(name, secondName);
-        if (buttom.equals("Запрос")) user.selectUser(name, secondName);
+        if (buttom.equals("Создать")) System.out.println("Create");//user.addUser(name, secondName);
+        if (buttom.equals("Запрос")) System.out.println("Querry"); //user.selectUser(name, secondName);
 
 
 //        req.setAttribute("id", user.id);

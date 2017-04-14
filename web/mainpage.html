@@ -17,25 +17,32 @@
 
         <!-- Можно описание поля сделать через абзац, а можно через label, тогда нажав на него мы сразу попадаем в поле -->
         <!-- maxlength="" - максимальное количество символов для ввода текста -->
-        <p><label>Введите Имя:<input type="text" name="name"></label></p>
+        <p><label>Имя: <input type="text" name="name"></label></p>
 
         <!-- type="password" - поле для ввода пароля -->
-        <p><label>Введите Фамилию:<input type="text" name="secondName"></label></p>
+        <p><label>Фамилию: <input type="text" name="secondName"></label></p>
         <p>
-            <input type="reset" name="submitButton" value="Сброс">
-            <input type="submit" name="submitButton" value="Создать">
+            <input type="reset" name="reset" value="Сброс">
+            <input type="submit" name="createButton" value="Создать">
         </p>
     </fieldset>
+</form>
+
+
+<br>
+<br>
+<br>
+<form action="/simple" name="form2">
     <fieldset>
-        <legend>Вывести список пользователей</legend>
+        <legend>Поиск пользователей</legend>
 
-        <p><label>Введите Имя:<input type="text" name="name"></label></p>
+        <p><label>Имя: <input type="text" name="name"></label></p>
 
 
-        <p><label>Введите Фамилию:<input type="text" name="secondName"></label></p>
+        <p><label>Фамилию: <input type="text" name="secondName"></label></p>
         <p>
-            <input type="reset" name="submitButton" value="Сброс">
-            <input type="submit" name="submitButton" value="Отправить">
+            <input type="reset" name="reset" value="Сброс">
+            <input type="submit" name="reqButtom" value="Запрос">
         </p>
     </fieldset>
 </form>
